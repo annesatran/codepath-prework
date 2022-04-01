@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>Hello!</title>
+    
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  
+  <body>
+    <h1>Light and Sound Memory Game</h1>
+    <p>
+      Welcome! Repeat back the pattern by pressing the buttons.
+    </p>
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button id="stopBtn" onclick="stopGame()" class="hidden">Stop</button>
+    
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/35d26b8a-c122-4f05-9618-a09901eacf73/green_frog_1f438.png?v=1648439762448" alt="green frog"></button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/35d26b8a-c122-4f05-9618-a09901eacf73/blue_whale_1f40b.png?v=1648439759336" alt="blue whale"></button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/35d26b8a-c122-4f05-9618-a09901eacf73/pink_cherry-blossom_1f338.png?v=1648439765196" alt="pink flower"></button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/35d26b8a-c122-4f05-9618-a09901eacf73/yellow_front-facing-baby-chick_1f425.png?v=1648439770757" alt="yellow chick"></button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/35d26b8a-c122-4f05-9618-a09901eacf73/purple_grapes_1f347.png?v=1648439767437" alt="purple grapes"></button>
+    </div>
+   
+  </body>
+</html>

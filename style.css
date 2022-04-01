@@ -1,0 +1,121 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: #f3f3f3;
+  color: #323023;
+  text-align: center;
+}
+
+h1 {
+  font-family: verdana, arial, sans-serif;
+  font-size: 24px;
+}
+
+button {
+  background-color: #323023;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#gameButtonArea {
+  display: flex;
+  justify-content: center;
+}
+
+#gameButtonArea > button {
+  width: 200px;
+  height: 200px;
+  margin: 12px 5px;
+  border-radius: 15px;
+}
+
+#gameButtonArea > button img {
+  height: auto;
+  width: 100px;
+  visibility:hidden;
+}
+
+#gameButtonArea > button:active, button.lit {
+  transform: translateY(3px);
+}
+
+#gameButtonArea > button:active img, button.lit {
+  display: inline;
+  visibility: visible;
+}
+
+.hidden {
+  display: none;
+}
+
+/* green */
+#button1 {
+  background: #9BE551;
+  box-shadow: 0 7px #6dc514;
+}
+
+#button1:active, #button1.lit {
+  background: #6dc514;
+  box-shadow: 0 4px #59A50D;
+}
+
+/* blue */
+#button2 {
+  background: #84bff2;
+  box-shadow: 0 7px #4c94d4;
+}
+
+#button2:active, #button2.lit {
+  background: #4c94d4;
+  box-shadow: 0 4px #3E6FA1;
+}
+
+/* red */
+#button3 {
+  background: #f4857e;
+  box-shadow: 0 7px #ef544a;
+}
+
+#button3:active, #button3.lit {
+  background: #ef544a;
+  box-shadow: 0 4px #BB3B33;
+}
+
+/* yellow */
+#button4 {
+  background: #f4e87e;
+  box-shadow: 0 7px #e9d100;
+}
+
+#button4:active, #button4.lit {
+  background: #e9d100;
+  box-shadow: 0 4px #C5B100;
+}
+
+/* purple */
+#button5 {
+  background: #D0ABFF;
+  box-shadow: 0 7px #AD6CFF;
+}
+
+#button5:active, #button5.lit {
+  background: #AD6CFF;
+  box-shadow: 0 4px #824DC6;
+}
